@@ -1,0 +1,16 @@
+@font-face {
+    font-family: LBlack;
+    src: url(/Вёрстка/assets/fonts/Lato-Black.ttf);
+  }
+  @font-face {
+    font-family: LBold;
+    src: url(/Вёрстка/assets/fonts/Lato-Bold.ttf);
+  }
+  @font-face {
+    font-family: LReg;
+    src: url(/Вёрстка/assets/fonts/Lato-Regular.ttf);
+  }
+  @font-face {
+    font-family: Ubu;
+    src: url(/Вёрстка/assets/fonts/Ubuntu-Regular.ttf);
+  }

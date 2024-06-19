@@ -1,0 +1,1150 @@
+@font-face {
+    font-family: LBlack;
+    src: url(/Вёрстка/assets/fonts/Lato-Black.ttf);
+}
+@font-face {
+    font-family: LBold;
+    src: url(/Вёрстка/assets/fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: LReg;
+    src: url(/Вёрстка/assets/fonts/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Ubu;
+    src: url(/Вёрстка/assets/fonts/Ubuntu-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 1920px;
+    font-size: 100%;
+    overflow-x: hidden;
+}
+// начало Главного контейнера
+.container{
+
+
+// начало Header
+.header{
+    width: 1920px;
+    height: 1080px;
+    &__background{
+        position: absolute;
+    }
+    &__nav{
+        width: 1230px;
+        height: 52px;
+        position: relative;
+        top: 20px;
+        left: 345px;
+        display: flex;
+        img{
+            width: 130px;
+            height: 22px;
+            align-self: center;
+        }
+        nav{
+            width: 500px;
+            height: 26px;
+            align-self: center;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 60px;
+            a{
+                font-family: LBold;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 26px;
+                color: white;
+                opacity: 60%;
+                text-decoration: none;
+            }
+        }
+        button{
+            width: 199px;
+            height: 52px;
+            border: none;
+            border-radius: 4px;
+            margin-left: 341px;
+            font-family: LBold;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 52px;
+            letter-spacing: 0.5px;
+            color: white;
+            background-color: #7772F1;
+        }
+    }
+    &__text{
+        position: relative;
+        font-size: 20px;
+        top: 215px;
+        left: 345px;
+        font-family: LBlack;
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 94px;
+        letter-spacing: 1px;
+        color: white;
+        span{
+            color: #7772f1;
+        }
+    }
+    &__btn-video{
+        width: 402px;
+        height: 84px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 259px 0 0 345px;
+        button{
+            width: 220px;
+            height: 52px;
+            border: 3px solid #7772f1;
+            border-radius: 4px;
+            background-color: transparent;
+            font-family: LBold;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            align-self: center;
+            color: white;
+        }
+        &__img{
+            width: 168px;
+            height: 84px;
+            display: flex;
+            p{
+                font-family: LBold;
+                font-size: 16px;
+                font-weight: 700;
+                color: white;
+                align-self: center;
+            }
+        }
+    }
+    &__features{
+        width: 1231px;
+        height: 40px;
+        position: relative;
+        top: 360px;
+        left: 345px;
+        display: flex;
+        justify-content: space-between;
+        div{
+            display: flex;
+            p{
+                font-family: LBold;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                color: white;
+                margin-left: 20px;
+                align-self: center;
+            }
+        }
+        hr{
+            border: 1px solid #DADBDD;
+            opacity: 15%;
+        }
+    }
+}
+// конец Header
+
+// начало Info
+.Info{
+    width: 1230px;
+    height: 210px;
+    margin: 120px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    h3{
+            font-family: LReg;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 42px;
+            color: #1E212C;
+    }
+    &__awards{
+        width: 495px;
+        height: 182px;
+        &__cards-groupOne, &__cards-groupTwo{
+            width: 495px;
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            &__card1, &__card2{
+                width: 227px;
+                height: 75px;
+                display: flex;
+                p{
+                    font-family: LReg;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    color: #424551;
+                    align-self: center;
+                    margin-left: 16px;
+                    opacity: 80%;
+                }
+            }
+        }
+        &__cards-groupTwo{
+            margin-top: 32px;
+        }
+    }
+}
+// конец Info
+
+// начало Clients
+.Clients{
+    width: 1230px;
+    height: 74px;
+    margin: 180px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    img{
+        align-self: center;
+    }
+}
+// конец Clients
+
+// начало About
+.About{
+    width: 1230px;
+    height: 560px;
+    border-radius: 4px;
+    margin: 170px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    &__text{
+        width: 390px;
+        height: 400px;
+        border-radius: 4px;
+        align-self: center;
+        h1{
+            font-family: LBlack;
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 60px;
+            color: #1E212C;
+        }
+        p{
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            margin-top: 40px;
+            color: #787A80;
+        }
+        button{
+            width: 161px;
+            height: 44px;
+            border: none;
+            margin-top: 48px;
+            border-radius: 4px;
+            color: white;
+            font-family: LBold;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 44px;
+            letter-spacing: 0.5px;
+            background-color: #7772F1;
+        }
+    }
+}
+// конец About
+
+// начало Figures
+.Figures{
+    width: 736px;
+    height: 189px;
+    margin: 180px auto 0 auto;
+    &__imgOne{
+        position: absolute;
+        left: 0;
+    }
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        &__card{
+            h3{
+                font-family: LReg;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                text-align: center;
+                margin-top: 20px;
+                color: #424551;
+            }
+        }
+    }
+    &__imgTwo{
+        position: absolute;
+        left: 1648px;
+        top: 2148px;
+    }
+}
+// конец Figures
+
+// начало Services
+.Services{
+    width: 1315px;
+    height: 719px;
+    margin: 180px 260px 0 345px;
+    h1{
+        font-family: Lato;
+        font-size: 46px;
+        font-weight: 900;
+        line-height: 60px;
+        margin-left: 484px;
+    }
+    &__menu{
+        width: 1230px;
+        height: 46px;
+        display: flex;
+        margin-top: 40px;
+        a{
+            width: 246px;
+            height: 46px;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 46px;
+            text-align: center;
+            text-decoration: none;
+            color: #7772F1;
+        }
+        a:hover{
+            border: 1px solid #7772F1;
+            border-radius: 4px;
+        }
+    }
+    &__content{
+        width: 1315px;
+        height: 530px;
+        display: flex;
+        justify-content: space-between;
+        &__text{
+            width: 390px;
+            height: 416px;
+            margin-top: 60px;
+            h3{
+                font-family: LReg;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 42px;
+                color: #1E212C;
+            }
+            &__list{
+                width: 390px;
+                height: 216px;
+                margin-top: 26px;
+                div{
+                    display: flex;
+                    margin-top: 12px;
+                    img{
+                        width: 16px;
+                        height: 16px;
+                        align-self: center;
+                    }
+                    p{
+                        font-family: Lato;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        color: #424551;
+                        margin-left: 12px;
+                    }
+                }
+            }
+            &__btn{
+                width: 328px;
+                height: 44px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 48px;
+                button{
+                    height: 44px;
+                    border-radius: 4px;
+                    font-family: LBold;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 44px;
+                    letter-spacing: 0.5px;
+                }
+                button:nth-of-type(1){
+                    width: 140px;
+                    border: 1px solid #7772F1;
+                    background-color: transparent;
+                    color: #7772F1;
+                }
+                button:nth-of-type(2){
+                    width: 166px;
+                    border: none;
+                    background-color: #7772F1;
+                    color: white;
+                }
+            }
+        }
+        img{
+            width: 801px;
+            height: 530px;
+        }
+    }
+}
+// конец Services
+
+// начало CTA
+.CTA{
+    width: 1920px;
+    height: 556px;
+    margin-top: 83px;
+    padding: 80px 345px 0 975px;
+    background-image: url(/Вёрстка/assets/img/Homepage/request-form.png);
+    &__content{
+        width: 600px;
+        height: 396px;
+        h1{
+            font-family: Lato;
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 60px;
+            color: white;
+        }
+        &__input{
+            width: 600px;
+            height: 52px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 74px;
+            input{
+                width: 285px;
+                height: 52px;
+                opacity: 80%;
+                border-radius: 4px;
+                border: 1px solid #FFFFFF33;
+                background-color: #FFFFFF1F;
+                color: white;
+                font-size: 20px;
+                font-family: LBlack;
+                padding: 2px 0 0 40px;
+            }
+        }
+        input:nth-child(3){
+            width: 600px;
+            height: 52px;
+            margin-top: 58px;
+            border-radius: 4px;
+            border: 1px solid #FFFFFF33;
+            background-color: #FFFFFF1F;
+            color: white;
+            font-size: 20px;
+            font-family: LBlack;
+            padding: 2px 0 0 40px;
+        }
+        &__info{
+            width: 600px;
+            height: 52px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 48px;
+            &__text{
+                width: 315px;
+                height: 52px;
+                display: flex;
+                img{
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 5px;
+                }
+                p{
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: white;
+                    margin-left: 12px;
+                }
+            }
+            button{
+                width: 220px;
+                height: 52px;
+                border: none;
+                border-radius: 4px;
+                color: white;
+                font-family: LBold;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 52px;
+                letter-spacing: 0.5px;
+                background-color: #7772F1;
+            }
+        }
+    }
+}
+// конец CTA
+
+// начало FAQ
+.FAQ{
+    width: 1230px;
+    height: 506px;
+    margin: 180px auto 120px auto;
+    display: flex;
+    &__imgOne{
+        position: absolute;
+        left: 0;
+        top: 4105px;
+    }
+    &__content{
+        width: 600px;
+        height: 506px;
+        h1{
+            font-family: LBlack;
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 60px;
+            color: #1E212C;
+        }
+        &__text{
+            width: 600px;
+            height: 282px;
+            margin-top: 60px;
+            &__panel-open{
+                width: 600px;
+                height: 120px;
+                &__title{
+                    width: 600px;
+                    height: 30px;
+                    display: flex;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        align-self: center;
+                    }
+                    p{
+                        font-family: LBold;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        color: #1E212C;
+                        margin-left: 20px;
+                    }
+                }
+                &__p{
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: #787A80;
+                    margin: 12px 0 0 40px;
+                }
+            }
+            &__panel-closed{
+                width: 600px;
+                height: 30px;
+                display: flex;
+                margin-top: 24px;
+                img{
+                    width: 20px;
+                    height: 20px;
+                    align-self: center;
+                }
+                p{
+                    font-family: LBold;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    color: #1E212C;
+                    margin-left: 20px;
+                }
+            }
+        }
+        button{
+            width: 185px;
+            height: 44px;
+            border: none;
+            border-radius: 4px;
+            background-color: #7772F1;
+            color: white;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 44px;
+            letter-spacing: 0.5px;
+            margin-top: 60px;
+        }
+    }
+    &__img{
+        width: 488px;
+        height: 404px;
+        margin: 58px 0 0 142px;
+    }
+}
+// конец FAQ
+
+// начало Case-Studies
+.Case-studies{
+    width: 1920px;
+    height: 782px;
+    background-color: #F4F5F6;
+    padding: 80px 0 0 354px;
+    h1{
+        font-family: LBlack;
+        font-size: 46px;
+        font-weight: 900;
+        line-height: 60px;
+        color: #1E212C;
+    }
+    &__icon{
+        width: 84px;
+        height: 48px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        left: 1539px;
+        top: 5211px;
+        img:nth-of-type(1){
+            width: 24px;
+            height: 24px;
+            align-self: center;
+        }
+    }
+    &__img{
+        width: 1230px;
+        height: 390px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    &__text{
+        width: 601px;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        margin: 80px 0 0 315px;
+        p{
+            font-family: LBlack;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 42px;
+        }
+        button{
+            width: 237px;
+            height: 52px;
+            border: none;
+            border-radius: 4px;
+            background-color: #7772F1;
+            color: white;
+            font-family: LBlack;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 52px;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+// конец Case-Studies
+
+// начало Benefits
+.Benefits{
+    width: 1230px;
+    height: 879px;
+    margin: 100px auto 0 auto;
+    h1{
+        font-family: LBlack;
+        font-size: 46px;
+        font-weight: 900;
+        line-height: 60px;
+        color: #1E212C;
+        text-align: center;
+    }
+    &__content{
+        width: 1230px;
+        height: 759px;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        img:nth-child(2){
+            width: 373px;
+            height: 505px;
+            margin-top: 126px;
+        }
+        &__card-groupOne, &__card-groupTwo{
+            width: 390px;
+            height: 759px;
+            div{
+                width: 390px;
+                height: 237px;
+                margin-top: 24px;
+                text-align: center;
+                border: 1px solid #E5E8ED;
+                img{
+                    margin-top: 40px;
+                }
+                h2, p{
+                    font-family: LBlack;
+                }
+                h2{
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    color: #1E212C;
+                    margin-top: 16px;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    color: #787A80;
+                    margin-top: 8px;
+                }
+            }
+            div:nth-of-type(1){
+                margin-top: 0;
+            }
+            &__shadow{
+                box-shadow: 0px 4px 4px -4px #1E212C08;
+                box-shadow: 0px 12px 10px -6px #9A9CA50A;
+                box-shadow: 0px 30px 24px -10px #9A9CA50D;
+                box-shadow: 0px 80px 80px -20px #9A9CA514;
+            }
+        }
+    }
+}
+// конец Benefits
+
+// начало Pricing
+.Pricing{
+    width: 1230px;
+    height: 762px;
+    margin: 180px auto 0 auto;
+    h1{
+        font-family: LBlack;
+        font-size: 46px;
+        font-weight: 900;
+        line-height: 60px;
+        text-align: center;
+        color: #1E212C;
+    }
+    &__imgTwo{
+        margin: 60px 420px 0 420px;
+    }
+    &__content{
+        width: 1230px;
+        height: 536px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        &__cardOne, &__cardTwo{
+            width: 390px;
+            height: 536px;
+            border: 1px solid #9a9a9a;
+            box-shadow: 0px 4px 4px -4px #1E212C0D;
+            box-shadow: 0px 12px 10px -6px #1E212C14;
+            box-shadow: 0px 26px 24px -10px #1E212C1A;
+            box-shadow: 0px 60px 80px -20px #1E212C29;
+            h3{
+                font-family: LReg;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 42px;
+                text-align: center;
+                color: #1E212C;
+                margin-top: 40px;
+            }
+            p{
+                font-family: LBlack;
+                font-size: 46px;
+                line-height: 60px;
+                text-align: center;
+                color: #7772F1;
+                margin-top: 8px;
+                span{
+                    font-family: LBold;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+            hr{
+                border: 1px solid #DADBDD;
+                margin-top: 16px;
+            }
+            &__text{
+                width: 191px;
+                height: 230px;
+                margin: 24px auto 0 auto;
+                div{
+                    display: flex;
+                    margin-top: 8px;
+                    img{
+                        width: 16px;
+                        height: 16px;
+                        align-self: center;
+                        margin: 0;
+                    }
+                    p{
+                        font-family: LReg;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        color: #1E212C;
+                        margin: 0;
+                        margin-left: 8px;
+                        text-align: left;
+                    }
+                }
+            }
+            button{
+                width: 146px;
+                height: 44px;
+                border: 1px solid #7772F1;
+                margin: 32px 122px 0 122px;
+                border-radius: 4px;
+                background-color: transparent;
+                color: #7772F1;
+                font-family: LBold;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 44px;
+                letter-spacing: 0.5px;
+            }
+        }
+        &__cardTwo{
+            background-color: #1E212C;
+            &__text{
+                div{
+                    p{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    &__imgOne{
+        position: absolute;
+        top: 6634px;
+        left: 0px;
+        margin: 0;
+    }
+    &__imgThree{
+        position: absolute;
+        left: 1210px;
+        top: 6490px;
+    }
+}
+// конец Pricing
+
+// начало Testimonials
+.Testimonials{
+    width: 1242px;
+    height: 544px;
+    margin: 180px auto 0 auto;
+    
+    h1{
+        font-family: LBlack;
+        font-size: 46px;
+        font-weight: 900;
+        line-height: 45px;
+        color: #1E212C;
+        text-align: center;
+    }
+    &__bacground{
+        width: 1020px;
+        height: 496px;
+        position: absolute;
+        left: 450px;
+    }
+    &__content{
+        width: 1020px;
+        height: 344px;
+        position: relative;
+        top: 60px;
+        left: 105px;
+        padding: 64px 105px 0 105px;
+        &__text{
+            width: 810px;
+            height: 216px; 
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            img{
+                width: 28px;
+                height: 20px;
+            }
+            &__testimonial{
+                p{
+                    font-family: LReg;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: #424551;
+                }
+                &__user{
+                    width: 243px;
+                    height: 72px;
+                    display: flex;
+                    margin-top: 24px;
+                    img{
+                        width: 72px;
+                        height: 72px;
+                    }
+                    div{
+                        margin: 11px 0 0 20px;
+                        p{
+                            font-family: LReg;
+                        }
+                        p:nth-of-type(1){
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 26px;
+                            color: #1E212C;
+                        }
+                        p:nth-of-type(2){
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            color: #787A80;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// конец Testimonials
+
+// начало Blog
+.Blog{
+    &__content{
+        width: 1230px;
+        height: 507px;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px auto 0 auto;
+        &__cardOne, &__cardTwo, &__cardThree{
+            width: 390px;
+            height: 507px;
+        }
+        &__cardOne{
+            h1{
+                font-family: LBlack;
+                font-size: 46px;
+                font-weight: 900;
+                line-height: 60px;
+                color: #1E212C;
+            }
+            p{
+                font-family: LReg;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                color: #424551;
+                margin-top: 40px;
+            }
+            button{
+                width: 180px;
+                height: 52px;
+                border: none;
+                border-radius: 4px;
+                background-color: #7772F1;
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 52px;
+                letter-spacing: 0.5px;
+                color: white;
+                margin-top: 60px;
+            }
+        }
+        &__cardTwo, &__cardThree{
+            &__content{
+                width: 296px;
+                height: 21px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 16px;
+                p{
+                    font-family: LBold;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    color: #787A80;
+                }
+                hr{
+                    height: 12px;
+                    border: 1px solid #787A80;
+                    align-self: center;
+                }
+            }
+            &__btn{
+                width: 110px;
+                height: 26px;
+                font-family: LBold;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 26px;
+                color: #1E212C;
+                display: flex;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+                margin-top: 144px;
+                img{
+                    margin-left: 8px;
+                }
+            }
+        }
+        &__cardThree{
+            &__content{
+                width: 333px;
+            }
+            &__p{
+                font-family: LBold;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                color: #1E212C;
+                margin-top: 8px;
+            }
+            &__p2{
+                font-family: LBold;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: #424551;
+                margin-top: 8px;
+            }
+            &__btn{
+                margin-top: 16px;
+            }
+        }
+    }
+}
+// конец Blog
+
+// начало Footer
+.footer{
+    width: 1920px;
+    height: 508px;
+    background-color: #1E212C;
+    margin-top: 180px;
+    padding-top: 80px;
+    &__content{
+        width: 1230px;
+        height: 198px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 354px 60px 354px;
+        &__logo{
+            width: 281px;
+            height: 198px;
+            p{
+                font-family: LReg;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #FFFFFF;
+                opacity: 60%;
+                margin-top: 24px;
+            }
+            &__icon{
+                margin-top: 38px;
+            }
+        }
+        &__company, &__services, &__contact, &__sign-up{
+            p{
+                font-family: LReg;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: white;
+                opacity: 60%;
+                margin-top: 8px;
+            }
+            p:nth-of-type(1){
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 1px;
+                color: white;
+                opacity: 100;
+                margin-top: 0;
+            }
+        }
+        &__sign-up{
+            input{
+                width: 286px;
+                height: 36px;
+                border: 1px solid #FFFFFF1F;
+                background-color: #FFFFFF1F;
+                border-radius: 4px;
+                margin-top: 24px;
+                padding: 2px 0 0 12px;
+            }
+            p:nth-of-type(2){
+                font-family: Lato;
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 15px;
+                color: white;
+                margin-top: 12px;
+            }
+        }
+    }
+    hr{
+        border: 1px solid #DADBDD;
+    }
+    &__img{
+        width: 1230px;
+        height: 40px;
+        margin: 40px 354px 0 345px;
+        display: flex;
+        justify-content: space-between;
+        div{
+            width: 129px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                color: white;
+                margin-top: 19px;
+            }
+        }
+    }
+    &__background{
+        width: 1920px;
+        height: 50px;
+        margin-top: 40px;
+        &__text{
+            width: 285px;
+            height: 18px;
+            margin: 16px 0 0 345px;
+            display: flex;
+            justify-content: space-between; 
+            p{
+                font-family: Lato;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                color: white;
+            }
+        }
+    }
+}
+// конец Footer
+
+}
+// конец Главного контейнера
